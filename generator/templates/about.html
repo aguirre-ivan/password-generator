@@ -1,18 +1,37 @@
-<h1>
-    Password generator.
-</h1>
+{% extends 'layout.html' %}
 
-<h3>
-    This is a simple project made with Django.
-</h3>
+{% block content %}
 
-<p>
-    This page allows you to generate random passwords of selected lengths based
-    on different params.
-</p>
+<div class="col-lg-4 offset-lg-4 mt-4">
 
-<p>
-    For more projects visit my <a
-        href="https://github.com/aguirre-ivan?tab=repositories">GitHub</a>
-    account.
-</p>
+    <div
+        class="card card-body p-5 text-light"
+        style="background-color: #212529">
+
+        <div class="mb-3">
+            <h3>
+                Password generator
+            </h3>
+        </div>
+
+        <div class="mb-3">
+            <p>
+                This is a simple project made with Django that allows you to
+                generate random
+                passwords of selected lengths based
+                on different params.
+            </p>
+        </div>
+
+        <div>
+            <p>
+                For more projects visit my <a
+                    href="https://github.com/aguirre-ivan?tab=repositories">GitHub</a>
+                account.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
